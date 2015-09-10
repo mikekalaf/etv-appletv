@@ -12,6 +12,8 @@
 		389E07341BA15BDD00974260 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 389E07321BA15BDD00974260 /* Main.storyboard */; };
 		389E07361BA15BDD00974260 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 389E07351BA15BDD00974260 /* Assets.xcassets */; };
 		389E07411BA15BDD00974260 /* etvTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 389E07401BA15BDD00974260 /* etvTests.swift */; };
+		389E074C1BA15D4200974260 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 389E074B1BA15D4200974260 /* QuartzCore.framework */; };
+		389E074E1BA15D4B00974260 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 389E074D1BA15D4B00974260 /* AVFoundation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -25,7 +27,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		389E072B1BA15BDD00974260 /* etv.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = etv.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		389E072B1BA15BDD00974260 /* ETV.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ETV.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		389E072E1BA15BDD00974260 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		389E07301BA15BDD00974260 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		389E07331BA15BDD00974260 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -34,6 +36,8 @@
 		389E073C1BA15BDD00974260 /* etvTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = etvTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		389E07401BA15BDD00974260 /* etvTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = etvTests.swift; sourceTree = "<group>"; };
 		389E07421BA15BDD00974260 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		389E074B1BA15D4200974260 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		389E074D1BA15D4B00974260 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,6 +45,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				389E074E1BA15D4B00974260 /* AVFoundation.framework in Frameworks */,
+				389E074C1BA15D4200974260 /* QuartzCore.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -57,6 +63,8 @@
 		389E07221BA15BDD00974260 = {
 			isa = PBXGroup;
 			children = (
+				389E074D1BA15D4B00974260 /* AVFoundation.framework */,
+				389E074B1BA15D4200974260 /* QuartzCore.framework */,
 				389E072D1BA15BDD00974260 /* etv */,
 				389E073F1BA15BDD00974260 /* etvTests */,
 				389E072C1BA15BDD00974260 /* Products */,
@@ -66,7 +74,7 @@
 		389E072C1BA15BDD00974260 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				389E072B1BA15BDD00974260 /* etv.app */,
+				389E072B1BA15BDD00974260 /* ETV.app */,
 				389E073C1BA15BDD00974260 /* etvTests.xctest */,
 			);
 			name = Products;
@@ -110,7 +118,7 @@
 			);
 			name = etv;
 			productName = etv;
-			productReference = 389E072B1BA15BDD00974260 /* etv.app */;
+			productReference = 389E072B1BA15BDD00974260 /* ETV.app */;
 			productType = "com.apple.product-type.application";
 		};
 		389E073B1BA15BDD00974260 /* etvTests */ = {
@@ -316,7 +324,7 @@
 				INFOPLIST_FILE = etv/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.priithaamer.etv;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = ETV;
 			};
 			name = Debug;
 		};
@@ -328,7 +336,7 @@
 				INFOPLIST_FILE = etv/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.priithaamer.etv;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = ETV;
 			};
 			name = Release;
 		};

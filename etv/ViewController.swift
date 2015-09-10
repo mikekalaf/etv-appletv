@@ -7,12 +7,25 @@
 //
 
 import UIKit
+import AVFoundation
 
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        let url = "http://wowza3.err.ee/live/smil:etv.smil/playlist.m3u"
+        
+        let player = AVPlayer(URL: NSURL(string: url)!)
+        
+        let layer = AVPlayerLayer(player: player)
+        
+        layer.frame = self.view.frame
+        layer.backgroundColor = UIColor.redColor().CGColor
+        layer.videoGravity = AVLayerVideoGravityResizeAspectFill
+        
+        self.view.layer.addSublayer(layer)
+        
+        player.play()
     }
 
     override func didReceiveMemoryWarning() {
