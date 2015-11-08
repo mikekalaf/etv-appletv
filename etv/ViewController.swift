@@ -11,21 +11,24 @@ import AVFoundation
 
 class ViewController: UIViewController {
 
+    var player = AVPlayer(URL: NSURL(string: "http://wowza3.err.ee/live/smil:etv.smil/playlist.m3u")!)
+    
     override func viewDidLoad() {
-        super.viewDidLoad()
-        let url = "http://wowza3.err.ee/live/smil:etv.smil/playlist.m3u"
         
-        let player = AVPlayer(URL: NSURL(string: url)!)
+        NSLog("View did load")
+        
+        super.viewDidLoad()
         
         let layer = AVPlayerLayer(player: player)
         
         layer.frame = self.view.frame
-        layer.backgroundColor = UIColor.redColor().CGColor
         layer.videoGravity = AVLayerVideoGravityResizeAspectFill
         
         self.view.layer.addSublayer(layer)
-        
-        player.play()
+    }
+    
+    override func viewWillDisappear(animated: Bool) {
+        NSLog("view did disappear")
     }
 
     override func didReceiveMemoryWarning() {
@@ -33,6 +36,14 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
+    
+    internal func play() {
+        player.play()
+    }
+    
+    internal func pause() {
+        player.pause()
+    }
 
 }
 
