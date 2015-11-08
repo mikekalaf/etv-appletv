@@ -14,9 +14,6 @@ class ViewController: UIViewController {
     var player = AVPlayer(URL: NSURL(string: "http://wowza3.err.ee/live/smil:etv.smil/playlist.m3u")!)
     
     override func viewDidLoad() {
-        
-        NSLog("View did load")
-        
         super.viewDidLoad()
         
         let layer = AVPlayerLayer(player: player)
@@ -27,13 +24,8 @@ class ViewController: UIViewController {
         self.view.layer.addSublayer(layer)
     }
     
-    override func viewWillDisappear(animated: Bool) {
-        NSLog("view did disappear")
-    }
-
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
 
     
