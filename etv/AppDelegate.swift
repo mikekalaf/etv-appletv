@@ -49,6 +49,36 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         viewController.pause()
     }
 
+    
+    func application(app: UIApplication, openURL url: NSURL, options: [String : AnyObject]) -> Bool {
+        
+        NSLog(url.absoluteString)
+        
+        if (url.host == nil) {
+            return true
+        }
+        
+        /**
+        let urlString = url.absoluteString
+        let queryArray = urlString.componentsSeparatedByString("/")
+        let query = queryArray[2]
+        if query.rangeOfString("video") != nil {
+            let videoIndexPathRow = queryArray[3]
+            let deepLinkVideoIndexPathRow = videoIndexPathRow
+            
+            if deepLinkVideoIndexPathRow != ""
+            {
+                if let tabBarController = self.window!.rootViewController as? UITabBarController
+                {
+                    let svc = tabBarController.viewControllers![0] as! MoviesViewController
+                    tabBarController.selectedIndex = 0
+                    svc.setDeepLink(deepLinkVideoIndexPathRow)
+                }
+            }
+        }**/
+        
+        return true
+    }
 
 }
 

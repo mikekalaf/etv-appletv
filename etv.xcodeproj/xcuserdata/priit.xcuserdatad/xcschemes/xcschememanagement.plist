@@ -9,6 +9,11 @@
 			<key>orderHint</key>
 			<integer>1</integer>
 		</dict>
+		<key>Topshelf.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>2</integer>
+		</dict>
 		<key>etv.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -17,6 +22,11 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>380370C91C2E925E00DA093D</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>389E072A1BA15BDD00974260</key>
 		<dict>
 			<key>primary</key>
