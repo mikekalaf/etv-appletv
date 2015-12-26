@@ -36,7 +36,7 @@
 			<string>com.priithaamer.etv</string>
 			<key>CFBundleURLSchemes</key>
 			<array>
-				<string>etv</string>
+				<string>etvapp</string>
 			</array>
 		</dict>
 	</array>

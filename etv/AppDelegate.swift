@@ -51,31 +51,27 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     
     func application(app: UIApplication, openURL url: NSURL, options: [String : AnyObject]) -> Bool {
-        
-        NSLog(url.absoluteString)
-        
         if (url.host == nil) {
             return true
         }
         
-        /**
+        let viewController = self.window!.rootViewController! as! ViewController
+        
         let urlString = url.absoluteString
         let queryArray = urlString.componentsSeparatedByString("/")
         let query = queryArray[2]
-        if query.rangeOfString("video") != nil {
-            let videoIndexPathRow = queryArray[3]
-            let deepLinkVideoIndexPathRow = videoIndexPathRow
-            
-            if deepLinkVideoIndexPathRow != ""
-            {
-                if let tabBarController = self.window!.rootViewController as? UITabBarController
-                {
-                    let svc = tabBarController.viewControllers![0] as! MoviesViewController
-                    tabBarController.selectedIndex = 0
-                    svc.setDeepLink(deepLinkVideoIndexPathRow)
-                }
-            }
-        }**/
+        
+        if query == "etv" {
+            viewController.playChannel("etv")
+        }
+        
+        if query == "etv2" {
+            viewController.playChannel("etv2")
+        }
+        
+        if query == "etvplus" {
+            viewController.playChannel("etvplus")
+        }
         
         return true
     }

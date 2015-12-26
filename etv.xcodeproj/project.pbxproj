@@ -12,6 +12,7 @@
 		380370D41C2E925E00DA093D /* Topshelf.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 380370CA1C2E925E00DA093D /* Topshelf.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		380370E81C2E9E2300DA093D /* topshelf-etv.png in Resources */ = {isa = PBXBuildFile; fileRef = 380370E61C2E9E2300DA093D /* topshelf-etv.png */; };
 		380370E91C2E9E2300DA093D /* topshelf-etv2.png in Resources */ = {isa = PBXBuildFile; fileRef = 380370E71C2E9E2300DA093D /* topshelf-etv2.png */; };
+		380370EB1C2ECF6400DA093D /* topshelf-etvplus.png in Resources */ = {isa = PBXBuildFile; fileRef = 380370EA1C2ECF6400DA093D /* topshelf-etvplus.png */; };
 		389E072F1BA15BDD00974260 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 389E072E1BA15BDD00974260 /* AppDelegate.swift */; };
 		389E07311BA15BDD00974260 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 389E07301BA15BDD00974260 /* ViewController.swift */; };
 		389E07341BA15BDD00974260 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 389E07321BA15BDD00974260 /* Main.storyboard */; };
@@ -59,6 +60,7 @@
 		380370D11C2E925E00DA093D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		380370E61C2E9E2300DA093D /* topshelf-etv.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "topshelf-etv.png"; sourceTree = "<group>"; };
 		380370E71C2E9E2300DA093D /* topshelf-etv2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "topshelf-etv2.png"; sourceTree = "<group>"; };
+		380370EA1C2ECF6400DA093D /* topshelf-etvplus.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "topshelf-etvplus.png"; sourceTree = "<group>"; };
 		389E072B1BA15BDD00974260 /* ETV.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ETV.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		389E072E1BA15BDD00974260 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		389E07301BA15BDD00974260 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -111,6 +113,7 @@
 		380370CE1C2E925E00DA093D /* Topshelf */ = {
 			isa = PBXGroup;
 			children = (
+				380370EA1C2ECF6400DA093D /* topshelf-etvplus.png */,
 				380370E61C2E9E2300DA093D /* topshelf-etv.png */,
 				380370E71C2E9E2300DA093D /* topshelf-etv2.png */,
 				380370CF1C2E925E00DA093D /* ServiceProvider.swift */,
@@ -269,6 +272,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				380370EB1C2ECF6400DA093D /* topshelf-etvplus.png in Resources */,
 				380370E81C2E9E2300DA093D /* topshelf-etv.png in Resources */,
 				380370E91C2E9E2300DA093D /* topshelf-etv2.png in Resources */,
 			);
@@ -514,6 +518,7 @@
 				380370D61C2E925E00DA093D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		389E07261BA15BDD00974260 /* Build configuration list for PBXProject "etv" */ = {
 			isa = XCConfigurationList;

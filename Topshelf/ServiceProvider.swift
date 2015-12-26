@@ -13,8 +13,6 @@ class ServiceProvider: NSObject, TVTopShelfProvider {
 
     override init() {
         super.init()
-        
-        NSLog("(TOPSHELF INIT)")
     }
 
     // MARK: - TVTopShelfProvider protocol
@@ -35,12 +33,10 @@ class ServiceProvider: NSObject, TVTopShelfProvider {
             etvContentItem.imageURL = etvurl
             etvContentItem.imageShape = .HDTV
             etvContentItem.title = "ETV"
-            etvContentItem.displayURL = NSURL(string: "etv://etv/")
-            etvContentItem.playURL = NSURL(string: "etv://etv/")
+            etvContentItem.displayURL = NSURL(string: "etvapp://etv/")
+            etvContentItem.playURL = NSURL(string: "etvapp://etv/")
             
             contentItems.append(etvContentItem)
-            
-            NSLog(etvurl.absoluteString)
         }
         
         let etv2Identifier = TVContentIdentifier(identifier: "etv2", container: nil)!
@@ -50,10 +46,23 @@ class ServiceProvider: NSObject, TVTopShelfProvider {
             etv2ContentItem.imageURL = etv2url
             etv2ContentItem.imageShape = .HDTV
             etv2ContentItem.title = "ETV 2"
-            etv2ContentItem.displayURL = NSURL(string: "etv://etv2/")
-            etv2ContentItem.playURL = NSURL(string: "etv://etv2/")
+            etv2ContentItem.displayURL = NSURL(string: "etvapp://etv2/")
+            etv2ContentItem.playURL = NSURL(string: "etvapp://etv2/")
             
             contentItems.append(etv2ContentItem)
+        }
+        
+        let etvPlusIdentifier = TVContentIdentifier(identifier: "etvplus", container: nil)!
+        let etvPlusContentItem = TVContentItem(contentIdentifier: etvPlusIdentifier)!
+        
+        if let etvPlusurl = NSBundle.mainBundle().URLForResource("topshelf-etvplus", withExtension: "png") {
+            etvPlusContentItem.imageURL = etvPlusurl
+            etvPlusContentItem.imageShape = .HDTV
+            etvPlusContentItem.title = "ETV +"
+            etvPlusContentItem.displayURL = NSURL(string: "etvapp://etvplus/")
+            etvPlusContentItem.playURL = NSURL(string: "etvapp://etvplus/")
+            
+            contentItems.append(etvPlusContentItem)
         }
         
         return contentItems
