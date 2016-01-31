@@ -13,6 +13,9 @@
 		380370E81C2E9E2300DA093D /* topshelf-etv.png in Resources */ = {isa = PBXBuildFile; fileRef = 380370E61C2E9E2300DA093D /* topshelf-etv.png */; };
 		380370E91C2E9E2300DA093D /* topshelf-etv2.png in Resources */ = {isa = PBXBuildFile; fileRef = 380370E71C2E9E2300DA093D /* topshelf-etv2.png */; };
 		380370EB1C2ECF6400DA093D /* topshelf-etvplus.png in Resources */ = {isa = PBXBuildFile; fileRef = 380370EA1C2ECF6400DA093D /* topshelf-etvplus.png */; };
+		380371311C41972E00DA093D /* kava.json in Resources */ = {isa = PBXBuildFile; fileRef = 380371301C41972E00DA093D /* kava.json */; };
+		388E53651C4BD2C300A95115 /* Kava.swift in Sources */ = {isa = PBXBuildFile; fileRef = 388E53641C4BD2C300A95115 /* Kava.swift */; };
+		388E53671C4BD4FD00A95115 /* JSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 388E53661C4BD4FD00A95115 /* JSON.swift */; };
 		389E072F1BA15BDD00974260 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 389E072E1BA15BDD00974260 /* AppDelegate.swift */; };
 		389E07311BA15BDD00974260 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 389E07301BA15BDD00974260 /* ViewController.swift */; };
 		389E07341BA15BDD00974260 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 389E07321BA15BDD00974260 /* Main.storyboard */; };
@@ -20,6 +23,7 @@
 		389E07411BA15BDD00974260 /* etvTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 389E07401BA15BDD00974260 /* etvTests.swift */; };
 		389E074C1BA15D4200974260 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 389E074B1BA15D4200974260 /* QuartzCore.framework */; };
 		389E074E1BA15D4B00974260 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 389E074D1BA15D4B00974260 /* AVFoundation.framework */; };
+		38B6736A1C5E608600FE5D47 /* NSDate.Comparison.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38B673691C5E608600FE5D47 /* NSDate.Comparison.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +65,10 @@
 		380370E61C2E9E2300DA093D /* topshelf-etv.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "topshelf-etv.png"; sourceTree = "<group>"; };
 		380370E71C2E9E2300DA093D /* topshelf-etv2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "topshelf-etv2.png"; sourceTree = "<group>"; };
 		380370EA1C2ECF6400DA093D /* topshelf-etvplus.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "topshelf-etvplus.png"; sourceTree = "<group>"; };
+		3803712F1C41971300DA093D /* Kava JSON.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "Kava JSON.playground"; sourceTree = "<group>"; };
+		380371301C41972E00DA093D /* kava.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = kava.json; sourceTree = "<group>"; };
+		388E53641C4BD2C300A95115 /* Kava.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Kava.swift; sourceTree = "<group>"; };
+		388E53661C4BD4FD00A95115 /* JSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSON.swift; sourceTree = "<group>"; };
 		389E072B1BA15BDD00974260 /* ETV.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ETV.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		389E072E1BA15BDD00974260 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		389E07301BA15BDD00974260 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -72,6 +80,7 @@
 		389E07421BA15BDD00974260 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		389E074B1BA15D4200974260 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		389E074D1BA15D4B00974260 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		38B673691C5E608600FE5D47 /* NSDate.Comparison.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSDate.Comparison.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,6 +131,14 @@
 			path = Topshelf;
 			sourceTree = "<group>";
 		};
+		387D93281C425D72009500E1 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				388E53641C4BD2C300A95115 /* Kava.swift */,
+			);
+			name = Network;
+			sourceTree = "<group>";
+		};
 		389E07221BA15BDD00974260 = {
 			isa = PBXGroup;
 			children = (
@@ -148,11 +165,16 @@
 		389E072D1BA15BDD00974260 /* etv */ = {
 			isa = PBXGroup;
 			children = (
+				387D93281C425D72009500E1 /* Network */,
 				389E072E1BA15BDD00974260 /* AppDelegate.swift */,
+				388E53661C4BD4FD00A95115 /* JSON.swift */,
 				389E07301BA15BDD00974260 /* ViewController.swift */,
+				38B673691C5E608600FE5D47 /* NSDate.Comparison.swift */,
 				389E07321BA15BDD00974260 /* Main.storyboard */,
 				389E07351BA15BDD00974260 /* Assets.xcassets */,
 				389E07371BA15BDD00974260 /* Info.plist */,
+				3803712F1C41971300DA093D /* Kava JSON.playground */,
+				380371301C41972E00DA093D /* kava.json */,
 			);
 			path = etv;
 			sourceTree = "<group>";
@@ -283,6 +305,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				389E07361BA15BDD00974260 /* Assets.xcassets in Resources */,
+				380371311C41972E00DA093D /* kava.json in Resources */,
 				389E07341BA15BDD00974260 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -309,8 +332,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				388E53651C4BD2C300A95115 /* Kava.swift in Sources */,
 				389E07311BA15BDD00974260 /* ViewController.swift in Sources */,
 				389E072F1BA15BDD00974260 /* AppDelegate.swift in Sources */,
+				388E53671C4BD4FD00A95115 /* JSON.swift in Sources */,
+				38B6736A1C5E608600FE5D47 /* NSDate.Comparison.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
