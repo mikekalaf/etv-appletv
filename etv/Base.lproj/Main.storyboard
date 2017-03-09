@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder.AppleTV.Storyboard" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="AppleTV" propertyAccessControl="none" useAutolayout="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder.AppleTV.Storyboard" version="3.0" toolsVersion="9060" systemVersion="15B42" targetRuntime="AppleTV" propertyAccessControl="none" useAutolayout="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -16,69 +15,12 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="u1y-9u-LHa">
-                                <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                            </view>
-                            <visualEffectView hidden="YES" opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vd6-E5-6oM">
-                                <rect key="frame" x="0.0" y="830" width="1920" height="250"/>
-                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="BBP-9E-jTY">
-                                    <rect key="frame" x="0.0" y="0.0" width="1920" height="250"/>
-                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                    <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LtM-1h-9RW">
-                                            <rect key="frame" x="50" y="50" width="1820" height="55"/>
-                                            <constraints>
-                                                <constraint firstAttribute="height" constant="55" id="pS6-jL-3Jj"/>
-                                            </constraints>
-                                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="45"/>
-                                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Lead" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Co3-y5-4yZ">
-                                            <rect key="frame" x="50" y="120" width="1820" height="72"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
-                                    </subviews>
-                                    <constraints>
-                                        <constraint firstItem="Co3-y5-4yZ" firstAttribute="leading" secondItem="BBP-9E-jTY" secondAttribute="leading" constant="50" id="9XS-Xq-k86"/>
-                                        <constraint firstItem="LtM-1h-9RW" firstAttribute="bottom" secondItem="Co3-y5-4yZ" secondAttribute="top" constant="-15" id="BFx-AY-xhA"/>
-                                        <constraint firstItem="LtM-1h-9RW" firstAttribute="top" secondItem="BBP-9E-jTY" secondAttribute="top" constant="50" id="b5g-wN-oXo"/>
-                                        <constraint firstAttribute="trailing" secondItem="LtM-1h-9RW" secondAttribute="trailing" constant="50" id="bXf-4u-dLa"/>
-                                        <constraint firstAttribute="trailing" secondItem="Co3-y5-4yZ" secondAttribute="trailing" constant="50" id="w4y-eL-0Kf"/>
-                                        <constraint firstItem="LtM-1h-9RW" firstAttribute="leading" secondItem="BBP-9E-jTY" secondAttribute="leading" constant="50" id="zSa-2b-leP"/>
-                                    </constraints>
-                                </view>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="250" id="7FI-3z-fL9"/>
-                                </constraints>
-                                <blurEffect style="light"/>
-                            </visualEffectView>
-                        </subviews>
+                        <animations/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="u1y-9u-LHa" secondAttribute="bottom" id="4ya-dB-A9S"/>
-                            <constraint firstAttribute="trailing" secondItem="vd6-E5-6oM" secondAttribute="trailing" id="5E2-um-2d6"/>
-                            <constraint firstItem="u1y-9u-LHa" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="937-fb-THl"/>
-                            <constraint firstAttribute="bottomMargin" secondItem="vd6-E5-6oM" secondAttribute="bottom" id="Fwo-4V-fQb"/>
-                            <constraint firstItem="vd6-E5-6oM" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="M1j-yr-qi1"/>
-                            <constraint firstAttribute="trailing" secondItem="u1y-9u-LHa" secondAttribute="trailing" id="NXY-Mk-E0K"/>
-                            <constraint firstItem="u1y-9u-LHa" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="tEy-5l-jXS"/>
-                        </constraints>
                     </view>
-                    <connections>
-                        <outlet property="currentShowLead" destination="Co3-y5-4yZ" id="iH0-BD-3oF"/>
-                        <outlet property="currentShowTitle" destination="LtM-1h-9RW" id="sKX-4y-7DG"/>
-                        <outlet property="infoView" destination="vd6-E5-6oM" id="LKI-Jc-SXV"/>
-                        <outlet property="videoView" destination="u1y-9u-LHa" id="AwY-9J-BYg"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="434" y="532"/>
         </scene>
     </scenes>
 </document>

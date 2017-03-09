@@ -17,32 +17,20 @@ class ViewController: UIViewController {
     
     let etvplus = "http://wowza3.err.ee/live/smil:etvpluss.smil/playlist.m3u"
     
-    var kava = Kava()
-    
     var channel = "etv"
     
     var player = AVPlayer()
     
     var layer = AVPlayerLayer()
     
-    @IBOutlet var videoView : UIView!
-    
-    @IBOutlet var infoView : UIView!
-    
-    @IBOutlet var currentShowTitle : UILabel!
-    
-    @IBOutlet var currentShowLead : UILabel!
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         layer.player = player
-        layer.frame = self.videoView.frame
+        layer.frame = self.view.frame
         layer.videoGravity = AVLayerVideoGravityResizeAspectFill
         
-        self.videoView.layer.addSublayer(layer)
-        
-        currentShowLead.lineBreakMode = .ByTruncatingTail;
+        self.view.layer.addSublayer(layer)
         
         playChannel("etv")
     }
@@ -90,22 +78,6 @@ class ViewController: UIViewController {
         layer.videoGravity = AVLayerVideoGravityResizeAspectFill
         
         player.play()
-        
-        self.kava.load(channel, callback: {title, description -> Void in
-            
-            dispatch_async(dispatch_get_main_queue(), {
-                self.currentShowTitle.text = title
-                self.currentShowLead.text = description
-                
-                self.infoView.hidden = false
-                
-                let delay = 5.0 * Double(NSEC_PER_SEC)
-                let time = dispatch_time(DISPATCH_TIME_NOW, Int64(delay))
-                dispatch_after(time, dispatch_get_main_queue(), {
-                    self.infoView.hidden = true
-                })
-            })
-        })
     }
 
     
