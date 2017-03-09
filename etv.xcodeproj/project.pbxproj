@@ -236,13 +236,16 @@
 					380370C91C2E925E00DA093D = {
 						CreatedOnToolsVersion = 7.2;
 						DevelopmentTeam = EBH4ESN349;
+						LastSwiftMigration = 0820;
 					};
 					389E072A1BA15BDD00974260 = {
 						CreatedOnToolsVersion = 7.1;
 						DevelopmentTeam = EBH4ESN349;
+						LastSwiftMigration = 0820;
 					};
 					389E073B1BA15BDD00974260 = {
 						CreatedOnToolsVersion = 7.1;
+						LastSwiftMigration = 0820;
 						TestTargetID = 389E072A1BA15BDD00974260;
 					};
 				};
@@ -358,6 +361,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.priithaamer.etv.Topshelf;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
 				TVOS_DEPLOYMENT_TARGET = 9.1;
 			};
 			name = Debug;
@@ -371,6 +375,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.priithaamer.etv.Topshelf;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
 				TVOS_DEPLOYMENT_TARGET = 9.1;
 			};
 			name = Release;
@@ -467,6 +472,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.priithaamer.etv;
 				PRODUCT_NAME = ETV;
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -481,6 +487,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.priithaamer.etv;
 				PRODUCT_NAME = ETV;
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
@@ -492,7 +499,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.priithaamer.etvTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/etv.app/etv";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ETV.app/ETV";
 			};
 			name = Debug;
 		};
@@ -504,7 +512,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.priithaamer.etvTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/etv.app/etv";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ETV.app/ETV";
 			};
 			name = Release;
 		};

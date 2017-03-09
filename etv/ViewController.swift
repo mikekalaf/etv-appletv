@@ -35,15 +35,15 @@ class ViewController: UIViewController {
         playChannel("etv")
     }
     
-    override func pressesBegan(presses: Set<UIPress>, withEvent event: UIPressesEvent?) {
-        if (presses.first?.type == .PlayPause) {
+    override func pressesBegan(_ presses: Set<UIPress>, with event: UIPressesEvent?) {
+        if (presses.first?.type == .playPause) {
             player.pause()
-        } else if (presses.first?.type == .Menu) {
+        } else if (presses.first?.type == .menu) {
             // handle event
             self.toggleChannel()
         } else {
             // perform default action (in your case, exit)
-            super.pressesBegan(presses, withEvent: event)
+            super.pressesBegan(presses, with: event)
         }
     }
     
@@ -61,15 +61,15 @@ class ViewController: UIViewController {
         }
     }
     
-    internal func playChannel(channel: String) {
+    internal func playChannel(_ channel: String) {
         player.pause()
         
         if channel == "etvplus" {
-            player = AVPlayer(URL: NSURL(string: etvplus)!)
+            player = AVPlayer(url: URL(string: etvplus)!)
         } else if channel == "etv2" {
-            player = AVPlayer(URL: NSURL(string: etv2)!)
+            player = AVPlayer(url: URL(string: etv2)!)
         } else {
-            player = AVPlayer(URL: NSURL(string: etv)!)
+            player = AVPlayer(url: URL(string: etv)!)
         }
         
         self.channel = channel

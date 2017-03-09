@@ -19,7 +19,7 @@ class ServiceProvider: NSObject, TVTopShelfProvider {
 
     var topShelfStyle: TVTopShelfContentStyle {
         // Return desired Top Shelf style.
-        return .Inset
+        return .inset
     }
 
     var topShelfItems: [TVContentItem] {
@@ -29,12 +29,12 @@ class ServiceProvider: NSObject, TVTopShelfProvider {
         let etvIdentifier = TVContentIdentifier(identifier: "etv.etv", container: nil)!
         let etvContentItem = TVContentItem(contentIdentifier: etvIdentifier)!
         
-        if let etvurl = NSBundle.mainBundle().URLForResource("topshelf-etv", withExtension: "png") {
+        if let etvurl = Bundle.main.url(forResource: "topshelf-etv", withExtension: "png") {
             etvContentItem.imageURL = etvurl
             etvContentItem.imageShape = .HDTV
             etvContentItem.title = "ETV"
-            etvContentItem.displayURL = NSURL(string: "etvapp://etv/")
-            etvContentItem.playURL = NSURL(string: "etvapp://etv/")
+            etvContentItem.displayURL = URL(string: "etvapp://etv/")
+            etvContentItem.playURL = URL(string: "etvapp://etv/")
             
             contentItems.append(etvContentItem)
         }
@@ -42,12 +42,12 @@ class ServiceProvider: NSObject, TVTopShelfProvider {
         let etv2Identifier = TVContentIdentifier(identifier: "etv2", container: nil)!
         let etv2ContentItem = TVContentItem(contentIdentifier: etv2Identifier)!
         
-        if let etv2url = NSBundle.mainBundle().URLForResource("topshelf-etv2", withExtension: "png") {
+        if let etv2url = Bundle.main.url(forResource: "topshelf-etv2", withExtension: "png") {
             etv2ContentItem.imageURL = etv2url
             etv2ContentItem.imageShape = .HDTV
             etv2ContentItem.title = "ETV 2"
-            etv2ContentItem.displayURL = NSURL(string: "etvapp://etv2/")
-            etv2ContentItem.playURL = NSURL(string: "etvapp://etv2/")
+            etv2ContentItem.displayURL = URL(string: "etvapp://etv2/")
+            etv2ContentItem.playURL = URL(string: "etvapp://etv2/")
             
             contentItems.append(etv2ContentItem)
         }
@@ -55,12 +55,12 @@ class ServiceProvider: NSObject, TVTopShelfProvider {
         let etvPlusIdentifier = TVContentIdentifier(identifier: "etvplus", container: nil)!
         let etvPlusContentItem = TVContentItem(contentIdentifier: etvPlusIdentifier)!
         
-        if let etvPlusurl = NSBundle.mainBundle().URLForResource("topshelf-etvplus", withExtension: "png") {
+        if let etvPlusurl = Bundle.main.url(forResource: "topshelf-etvplus", withExtension: "png") {
             etvPlusContentItem.imageURL = etvPlusurl
             etvPlusContentItem.imageShape = .HDTV
             etvPlusContentItem.title = "ETV +"
-            etvPlusContentItem.displayURL = NSURL(string: "etvapp://etvplus/")
-            etvPlusContentItem.playURL = NSURL(string: "etvapp://etvplus/")
+            etvPlusContentItem.displayURL = URL(string: "etvapp://etvplus/")
+            etvPlusContentItem.playURL = URL(string: "etvapp://etvplus/")
             
             contentItems.append(etvPlusContentItem)
         }
