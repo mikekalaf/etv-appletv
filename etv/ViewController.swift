@@ -11,11 +11,11 @@ import AVFoundation
 
 class ViewController: UIViewController {
 
-    let etv = "http://wowza3.err.ee/live/smil:etv.smil/playlist.m3u"
+    let etv = "http://185.76.9.173/live/etv.m3u8"
     
-    let etv2 = "http://wowza3.err.ee/live/smil:etv2.smil/playlist.m3u"
+    let etv2 = "http://185.76.9.173/live/etv2.m3u8"
     
-    let etvplus = "http://wowza3.err.ee/live/smil:etvpluss.smil/playlist.m3u"
+    let etvplus = "http://185.76.9.173/live/etvpluss.m3u8"
     
     var channel = "etv"
     
