@@ -11,11 +11,13 @@ import AVFoundation
 
 class ViewController: UIViewController {
 
-    let etv = "http://185.76.9.173/live/etv.m3u8"
+    let etv = "https://sb.err.ee/live/etv.m3u8"
     
-    let etv2 = "http://185.76.9.173/live/etv2.m3u8"
+    // let etv = "https://lonestarr.err.ee/live/etvh/index.m3u8?id=59063494668877"
     
-    let etvplus = "http://185.76.9.173/live/etvpluss.m3u8"
+    let etv2 = "https://sb.err.ee/live/etv2.m3u8"
+    
+    let etvplus = "https://sb.err.ee/live/etvpluss.m3u8"
     
     var channel = "etv"
     
@@ -28,7 +30,7 @@ class ViewController: UIViewController {
         
         layer.player = player
         layer.frame = self.view.frame
-        layer.videoGravity = AVLayerVideoGravityResizeAspectFill
+        layer.videoGravity = AVLayerVideoGravity.resizeAspectFill
         
         self.view.layer.addSublayer(layer)
         
@@ -75,7 +77,7 @@ class ViewController: UIViewController {
         self.channel = channel
         
         layer.player = player
-        layer.videoGravity = AVLayerVideoGravityResizeAspectFill
+        layer.videoGravity = AVLayerVideoGravity.resizeAspectFill
         
         player.play()
     }

@@ -26,8 +26,8 @@ class ServiceProvider: NSObject, TVTopShelfProvider {
         // Create an array of TVContentItems.
         var contentItems = [TVContentItem]()
         
-        let etvIdentifier = TVContentIdentifier(identifier: "etv.etv", container: nil)!
-        let etvContentItem = TVContentItem(contentIdentifier: etvIdentifier)!
+        let etvIdentifier = TVContentIdentifier(identifier: "etv.etv", container: nil)
+        let etvContentItem = TVContentItem(contentIdentifier: etvIdentifier)
         
         if let etvurl = Bundle.main.url(forResource: "topshelf-etv", withExtension: "png") {
             etvContentItem.imageURL = etvurl
@@ -39,8 +39,8 @@ class ServiceProvider: NSObject, TVTopShelfProvider {
             contentItems.append(etvContentItem)
         }
         
-        let etv2Identifier = TVContentIdentifier(identifier: "etv2", container: nil)!
-        let etv2ContentItem = TVContentItem(contentIdentifier: etv2Identifier)!
+        let etv2Identifier = TVContentIdentifier(identifier: "etv2", container: nil)
+        let etv2ContentItem = TVContentItem(contentIdentifier: etv2Identifier)
         
         if let etv2url = Bundle.main.url(forResource: "topshelf-etv2", withExtension: "png") {
             etv2ContentItem.imageURL = etv2url
@@ -52,8 +52,8 @@ class ServiceProvider: NSObject, TVTopShelfProvider {
             contentItems.append(etv2ContentItem)
         }
         
-        let etvPlusIdentifier = TVContentIdentifier(identifier: "etvplus", container: nil)!
-        let etvPlusContentItem = TVContentItem(contentIdentifier: etvPlusIdentifier)!
+        let etvPlusIdentifier = TVContentIdentifier(identifier: "etvplus", container: nil)
+        let etvPlusContentItem = TVContentItem(contentIdentifier: etvPlusIdentifier)
         
         if let etvPlusurl = Bundle.main.url(forResource: "topshelf-etvplus", withExtension: "png") {
             etvPlusContentItem.imageURL = etvPlusurl

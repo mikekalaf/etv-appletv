@@ -7,7 +7,7 @@
 //
 
 import XCTest
-@testable import etv
+@testable import ETV
 
 class etvTests: XCTestCase {
     
